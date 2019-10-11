@@ -1,0 +1,132 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400i,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:200,200i&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+    <title>Scott Jowsey - Home</title>
+    <script src='game.js'></script>
+  </head>
+  <body>
+    <div class = "nav">
+      <div class = "line">
+      </div>
+      <div class = "logo">
+        <h1>SCOTT JOWSEY</h1>
+        <h3>IXXN221 BLOG</h3>
+      </div>
+      <div class = "navigation">
+          <a href="index.html">HOME</a>
+          <a>ABOUT</a>
+          <a href="#blog-posts2">POSTS</a>
+      </div>
+    </div>
+
+    <div class = "game-post">
+      <div class = "page-date">
+        <p>Thursday 26th September </p>
+      </div>
+      <div class = "page-title">
+        <h1>Tutorial 10: Number Input Game</h1>
+      </div>
+
+      <div class = "game-box">
+        <h1>Guess the Number! </h1>
+        <p>Input a number between 1 & 100 to find out if you have guessed correctly! </p>
+        <p><b>Closeness Zone Scale:</b> Freezing, Cold, Warm, Hot, Boiling.  </p>
+        <div class = "reset">
+          <button onclick='reset()'>Set/Reset Number</button>
+        </div>
+        <div class = "input">
+          <label>Number: <input type='text' id='number'/></label>
+          <button onclick='recordClicks()' id = 'check'>Check Number</button>
+        </div>
+
+        <div id = "recordClicks">
+          <h4>Number of Guesses: 0</h4>
+        </div>
+        <div id = "closeness">
+          <h4>Closeness Zone</h4>
+        </div>
+      </div>
+    </div>
+
+
+        <div id = "blog-posts">
+
+          <div class = "posts">
+            <div class = "post-header">
+              <h2>BLOG POSTS</h2>
+            </div>
+            <div class = "post-wrap">
+              <div class = "post-half">
+                <div class = "post-link">
+                  <div class = "post-image">
+                    <img src = "images/wireframe2.svg" alt = "Number Input Link Image" >
+                  </div>
+                  <div class = "post-date">
+                    <p>Thursday 26th September</p>
+                  </div>
+                  <div class = "post-title">
+                    <h1>Tutorial 10:<br>Number Input Game</h1>
+                  </div>
+                  <div class = "post-moreinfo">
+                    <a href = "game.html"><p>Play Here ...</p></a>
+                  </div>
+                </div>
+
+                <div class = "post-link">
+                  <div class = "post-image">
+                    <img src = "images/accessibility2.svg" alt = "Image of HTML code that creates an image description" />
+                  </div>
+                  <div class = "post-date">
+                    <p>Sunday 11th August</p>
+                  </div>
+                  <div class = "post-title">
+                    <h1>Reflection:<br>Improving Website Accessibility</h1>
+                  </div>
+                  <div class = "post-moreinfo">
+                    <a href = "accessibility.html"><p>Read More ...</p></a>
+                  </div>
+                </div>
+              </div>
+
+              <div class = "post-half">
+                <div class = "post-link">
+                  <div class = "post-image">
+                    <img src = "images/flex-image.svg" alt = "Website Wireframe for Desktop Computer and Mobile Devices" />
+                  </div>
+                  <div class = "post-date">
+                    <p>Thursday 25th July</p>
+                  </div>
+                  <div class = "post-title">
+                    <h1>Reflection:<br>Implementing Responsive Design</h1>
+                  </div>
+                  <div class = "post-moreinfo">
+                    <a href = "flexbox.html"><p>Read More ...</p></a>
+                  </div>
+                </div>
+
+                <div class = "post-link">
+                  <div class = "post-image">
+                    <img src = "images/wireframe2.svg" alt = "Wireframe Git Link Image">
+                  </div>
+                  <div class = "post-date">
+                    <p>Thursday 18th July</p>
+                  </div>
+                  <div class = "post-title">
+                    <h1>Reflection:<br>The importance of Git for Designers</h1>
+                  </div>
+                  <div class = "post-moreinfo">
+                    <a href = "reflection.html"><p>Read More ...</p></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+  </body>
+
+</html>
