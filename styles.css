@@ -1,7 +1,7 @@
 body{
-  margin: 0;
   height: 100vh;
   width: 100%;
+  margin: 0;
 }
 
 
@@ -275,7 +275,17 @@ h3{
   display: flex;
   flex-direction: column;
   width: 90%;
-  height: 200vh;
+  height: 250vh;
+  padding: 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.flex-post{
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  height: 125vh;
   padding: 0;
   margin-left: auto;
   margin-right: auto;
@@ -285,6 +295,7 @@ h3{
   display: flex;
   align-items: flex-start;
   height: 10%;
+  width: 100%;
   border-bottom: 1px solid black;
 }
 
@@ -301,6 +312,7 @@ h3{
 }
 
 .page-paragraph{
+  margin-top: 10%;
   width: 80%;
   height: 77%;
   margin-left: auto;
@@ -325,20 +337,45 @@ h3{
   font-weight: 400;
 }
 
+.flex-paragraph{
+  margin-top: 5%;
+  display: flex;
+  justify-content: center;
+  width: 80%;
+  height: 30%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.flex-paragraph p{
+  line-height: auto;
+  font-size: 14pt;
+  text-decoration: none;
+  padding-right: 2%;
+  font-family: 'Montserrat', sans-serif;
+  color: black;
+  font-weight: 400;
+}
+
+.flex-paragraph a{
+  line-height: 0;
+  font-size: 14pt;
+  font-family: 'Montserrat', sans-serif;
+  color: #ff5000;
+  font-weight: 400;
+}
+
 .post-header{
   height: 7.5%;
   width: 100%;
   margin-bottom: 0.25%;
 }
 
-
-/*Flex Box Page */
-
 .image-wrap{
   display: flex;
   flex-direction: row;
   width: 100%;
-  height: 60%;
+  height: 35%;
   margin-top: 2.5%;
 }
 
@@ -383,14 +420,18 @@ h3{
 }
 
 .game-box{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   padding-top: 0.15%;
   text-align: center;
-    width: 80%;
-    height: 35%;
-    margin-left: auto;
-    margin-right: auto;
-    font-family: 'Montserrat', sans-serif;
-  }
+  width: 80%;
+  height: 75%;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: 'Montserrat', sans-serif;
+}
 
 button{
   font-family: 'Montserrat', sans-serif;
@@ -409,8 +450,11 @@ button{
 
 
 .game-post{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   width: 90%;
-  height: 60%;
+  height: 100%;
   padding: 0;
   margin-left: auto;
   margin-right: auto;
@@ -420,13 +464,63 @@ button{
   padding-bottom: 1.5%;
 }
 
+@media (max-width: 1200px){
+  body{
+    height: 100vh;
+    width: 100%;
+  }
+
+  .page-post{
+    height: 225%;
+  }
+
+  .game-post{
+    height: 100%;
+  }
+
+  .page-paragraph{
+    margin-top: 10%;
+  }
+
+  #blog-posts{
+    padding-bottom: 5%;
+  }
+
+  .page-title{
+    width: 100%;
+    height: 20%;
+  }
+}
+
 @media (max-width: 1050px){
+  body{
+    height: 100vh;
+    width: 100%;
+  }
+
+  #home-info{
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-end;
+    height: 97.5%;
+    width: 101%;
+  }
+
+  .home-blurb{
+    margin-top: 2.5%;
+    margin-bottom: 2.5%;
+  }
+
   .post-moreinfo{
     margin-top: 10%;
   }
 
   .post-image{
     height: 30%;
+  }
+
+  .page-post{
+    height: 225%;
   }
 
   .post-date{
@@ -439,7 +533,8 @@ button{
   }
 
   .page-title{
-    height: 15%;
+    height: 10%;
+    width: 100%;
   }
 
   .page-title h1{
@@ -451,7 +546,9 @@ button{
   }
 
   .page-paragraph{
+    margin-top: 5%;
     height: 50%;
+    margin-bottom: 5%;
   }
 
   .page-paragraph p{
@@ -462,12 +559,41 @@ button{
     font-size: 10pt;
   }
 
+  .flex-post .page-title{
+    height: 25%;
+  }
+
+  .flex-paragraph{
+    align-items: flex-end;
+    margin-top: 25%;
+    height: 100%;
+    margin-bottom: 5%;
+  }
+
+  .flex-paragraph p{
+    font-size: 11pt;
+  }
+
+  .flex-paragraph a{
+    font-size: 10pt;
+  }
+
+  .game-post{
+    height: 100%;
+    width: 90%;
+  }
+
+  .game-box{
+    height: 100%;
+  }
+
   #blog-posts{
     padding: 0;
+    margin-bottom: 5%;
   }
 
   .image-wrap{
-    height: 30%;
+    height: 15%;
   }
 }
 
@@ -506,6 +632,7 @@ button{
     display: flex;
     align-items: center;
   }
+
   .logo h1{
     font-size: 12pt;
   }
@@ -548,6 +675,7 @@ button{
     padding: 0;
     width: 101%;
     height: 150%;
+    margin-bottom: 5%;
   }
 
   .post-header{
@@ -610,11 +738,14 @@ button{
     margin-top: 0;
   }
 
-  /* Game Page */
-
   .game-post{
-    height: 90%;
-    margin-top: 10%;
+    height: 125%;
+    margin-top: 2.5%;
+  }
+
+  .flex-post{
+    height: 125%;
+    margin-top: 2.5%;
   }
 
   .page-title{
@@ -630,23 +761,18 @@ button{
     margin-top:10%;
     padding-top: 2.5%;
   }
-/*
-  .page-title h1{
-    margin: 0;
-    padding-bottom: 5%;
-    font-size: 25pt;
-    line-height: normal;
-  } */
 
   .page-date p{
     font-size: 15pt;
   }
 
   .game-box{
-    height: 75%;
+    height: 50%;
+    width: 75%;
+    margin-top: 5%;
     display: flex;
     flex-direction: column;
-    align-items: stretch;
+    align-items: center;
     justify-content: space-around;
   }
 
@@ -669,6 +795,10 @@ button{
     width: 100%;
   }
 
+  .page-post{
+    height: 225%;
+  }
+
   .page-paragraph p{
     font-size: 12pt;
   }
@@ -680,15 +810,43 @@ button{
 
 @media (max-width: 750px){
   .page-paragraph p{
-    font-size: 9.5pt;
+    font-size: 10.5pt;
   }
 
   .page-title{
     height: 10%;
   }
 
+  .page-date{
+    margin-top: 5%;
+  }
+
   .page-paragraph a{
     font-size: 9.5pt;
+  }
+
+  #blog-posts{
+    margin-bottom: 0;
+  }
+
+  .page-post{
+    margin-top: 10%;
+    height: 225%;
+  }
+
+  .flex-post{
+    margin-top: 10%;
+    height: 100%;
+  }
+
+  .game-post{
+    height: 150%;
+    margin-top: 10%;
+    margin-bottom: 10%;
+  }
+
+  .game-box{
+    height: 50%;
   }
 }
 
@@ -739,14 +897,39 @@ button{
 
   .page-image{
     height: 20%;
+    margin-bottom: 15%;
   }
 
   .page-date{
-    margin-top: 15%;
+    margin-top: 10%;
+  }
+
+  .page-post{
+    height: 200%;
+  }
+
+  .flex-post{
+    margin-top: 7.5%;
+    height: 200%;
   }
 
   .page-title{
-    height: 10;
+    height: 12.5%;
+  }
+
+  .page-paragraph{
+    margin-top: 10%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height: 40%;
+  }
+
+  .flex-paragraph{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height: 50%;
   }
 
   .page-paragraph p{
@@ -754,8 +937,86 @@ button{
   }
 
   .image-wrap{
-    margin-top: 15%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 55%;
+  }
+
+  .game-post{
+    margin-bottom: 20%;
+  }
+
+}
+
+@media (max-width: 450px){
+
+  .image-wrap{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
     height: 15%;
   }
 
+  .page-post{
+    height: 250%;
+  }
+
+  .page-title{
+    height: 15%;
+  }
+
+  .page-image{
+    margin-bottom: 0;
+  }
+
+  .page-paragraph{
+    height: 50%;
+  }
+
+  .game-post{
+    height: 150%;
+    margin-bottom: 0;
+  }
+
+  .game-box{
+    height: 50%;
+  }
+
+  .flex-post{
+    margin-top: 12.5%;
+  }
+
+  .image-wrap{
+    height: 30%;
+  }
+}
+
+@media (max-width: 375px){
+  .page-post{
+    height: 275%;
+  }
+
+  .page-title{
+    height: 15%;
+  }
+
+  .page-paragraph p{
+    font-size: 9.5pt;
+  }
+
+  .game-post{
+    height: 150%;
+    margin-bottom: 0;
+  }
+
+  .game-box{
+    height: 60%;
+  }
+
+  .image-wrap{
+    height: 20%;
+  }
 }
